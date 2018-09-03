@@ -17,6 +17,8 @@ spring:
 wunderground:
   api:
     key:
+      - "431231231"
+      - "431231231"
 
 
 api:

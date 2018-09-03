@@ -1,0 +1,75 @@
+spring:
+  profiles:
+    active: "prod"
+  datasource:
+    url: "jdbc:h2:mem:~/h2/testdb"
+    driverClassName: "org.h2.Driver"
+    username: "sa"
+    password:
+  jpa:
+    database-platform: "org.hibernate.dialect.H2Dialect"
+  h2:
+    console:
+      enabled: "true"
+      path: "/console"
+
+
+wunderground:
+  api:
+    key:
+      - "ab5ff0e58f32c6cf"
+      - "15501c6b83d8d985"
+      - "60e8b5c0c9af5846"
+      - "925f8b99d34a87e8"
+      - "e42abfe66d963907"
+      - "10f14aa242fe6d99"
+
+api:
+  default:
+    key: ${wunderground.api.key[2]}
+
+logging:
+  level:
+    org:
+      springframework:
+        web: "DEBUG"
+
+---
+
+spring:
+  profiles:
+    "dev"
+api:
+  base:
+    url: "http://localhost:3000/"
+
+---
+
+spring:
+  profiles: "prod"
+api:
+  base:
+    url: "http://api.wunderground.com/"
+
+logging:
+  level:
+    org:
+      springframework:
+        web: "INFO"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

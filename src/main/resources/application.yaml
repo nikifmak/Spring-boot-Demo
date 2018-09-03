@@ -17,12 +17,7 @@ spring:
 wunderground:
   api:
     key:
-      - "ab5ff0e58f32c6cf"
-      - "15501c6b83d8d985"
-      - "60e8b5c0c9af5846"
-      - "925f8b99d34a87e8"
-      - "e42abfe66d963907"
-      - "10f14aa242fe6d99"
+
 
 api:
   default:

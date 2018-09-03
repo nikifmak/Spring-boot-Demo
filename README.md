@@ -2,9 +2,9 @@
 
 ## In order to run the project 
 
-1. git clone https://nikif@bitbucket.org/nikif/demo.git
+1. git clone https://github.com/nikifmak/Spring-boot-Demo.git
 
-2. cd demo
+2. cd Spring-boot-Demo
 
 3. `mvn clean package` Or `./mvnw clean package`
 
